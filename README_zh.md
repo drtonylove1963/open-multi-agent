@@ -87,11 +87,13 @@ npm install @open-multi-agent/core
 
 - **[temodar-agent](https://github.com/xeloxa/temodar-agent)**（约 60 stars）。WordPress 安全分析平台，作者 [Ali Sünbül](https://github.com/xeloxa)。在 Docker runtime 里直接用我们的内置工具（`bash`、`file_*`、`grep`）。已确认生产环境使用。
 - **[PR-Copilot](https://github.com/kidoom/PR-Copilot)**。AI pull request 审查助手，作者 [kidoom](https://github.com/kidoom)。运行一个 OMA 审查 team（coordinator + 限定范围的 reviewer agent），用 `defineTool` 定义仓库上下文工具，并加入自定义 `ContextStrategy` 做 token-aware 的 PR diff 压缩。公开代码，基于 `@open-multi-agent/core`。
+- **[StuFlow](https://github.com/znc15/StuFlow)**。终端 AI 编码助手，作者 [znc15](https://github.com/znc15)。以 OMA 为编排内核：构建 team 并通过 `runAgent` / `runTasks` / `runTeam` 驱动，配自定义 `RunTeamOptions` coordinator，搭配 DeepSeek。公开代码，基于 `@open-multi-agent/core`。
 
 **集成**
 
 - **[Engram](https://www.engram-memory.com)** — "AI 记忆的 Git"。在 agent 之间即时同步知识并标记冲突。([repo](https://github.com/Agentscreator/engram-memory))
 - **[@agentsonar/oma](https://github.com/agentsonar/agentsonar-oma)** — Sidecar，检测跨运行的委派环、重复和速率突增。
+- **[CodingScaffold](https://github.com/JRS1986/CodingScaffold)** — agentic-coding 脚手架，把 OMA 列为可选编排后端，附带 `runTeam` 工作流模板。
 
 **Provider 社区优惠** — 限时，不代表付费背书。
 
